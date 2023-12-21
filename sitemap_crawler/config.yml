@@ -1,0 +1,7 @@
+sitemap_urls:
+  - https://www.washingtonpost.com/arcio/sitemap/section-index/politics/
+  - https://edition.cnn.com/sitemap/news.xml
+  - https://www.nytimes.com/sitemaps/new/sitemap.xml.gz
+csv_location: 'out/'
+sitemap_limit: 5
+master_filename: 'master_sitemap.csv'

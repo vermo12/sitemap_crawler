@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "sitemap-crawler"
+version = "0.1.0"
+description = ""
+authors = ["Francois Vermaut <fvermaut@gmail.com>"]
+readme = "README.md"
+packages = [{include = "sitemap_crawler"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pyyaml = "^6.0.1"
+pydantic = "^2.5.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
