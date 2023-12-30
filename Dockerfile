@@ -2,7 +2,7 @@ ARG PYTHON_VERSION=3.12.1
 
 FROM python:${PYTHON_VERSION}-bullseye as builder
 
-RUN pip install poetry==1.4.2
+RUN pip install poetry==1.7.1
 
 ENV POETRY_NO_INTERACTION=1 \
     POETRY_VIRTUALENVS_IN_PROJECT=1 \
@@ -27,4 +27,6 @@ COPY sitemap_crawler ./sitemap_crawler
 
 RUN mkdir out
 
-ENTRYPOINT ["python", "sitemap_crawler/sitemap_crawler.py"]
+EXPOSE 8000
+
+CMD ["uvicorn", "sitemap_crawler.api.main:app", "--host", "0.0.0.0", "--port", "8000"]
