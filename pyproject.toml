@@ -10,6 +10,7 @@ packages = [{include = "sitemap_crawler"}]
 python = "^3.12"
 pyyaml = "^6.0.1"
 pydantic = "^2.5.2"
+requests = "^2.31.0"
 
 
 [build-system]
